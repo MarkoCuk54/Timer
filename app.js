@@ -6,6 +6,12 @@ class Timer {
         this.startButton.addEventListener("click", this.start);
     }
     start() {
-        return "Hello";
+        console.log("Timer started!");
     }
 }
+
+const duration = document.querySelector("#duration");
+const start = document.querySelector("#start");
+const stop = document.querySelector("#stop");
+
+const timer = new Timer(duration, start, stop);
